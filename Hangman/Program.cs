@@ -25,7 +25,7 @@
                 Console.WriteLine($"Life Remain: {remainingLives}");
                 Console.WriteLine("Enter a letter");
 
-                char guess = Console.ReadLine().ToLower()[0];
+                char guess = Console.ReadKey().KeyChar;
 
                 if (guessedChar.Contains(guess))
                 {
